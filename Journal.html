@@ -17,6 +17,30 @@
             <tbody>
 
 	<tr>
+                <td>01-08-2022</td>
+                <td>
+                
+                <li>Today we learnt about Relationship queries in Apex. Relationship queries can be of two types i.e. Parent to child and child to parent</li>
+		<li>Parent to child -> related child record eg.-select name,(select firstname,lastname from contacts) from account</li>
+		<li>Child to parent e.g. - select firstname,lastname,account.industry from contact</li>
+		<li>Today we learnt about SOSL in Apex. SOSL stands for Salesforce Object Search Language</li>
+		<li>SOSL syntax - Find ‘search text’ [IN search group] [returning objects and fields] . In search group :All fields,Name fields,Email fields,Phone fields</li>
+		<li>Sosl doesnt support picklist.String sd ='genepoint';List<List<Sobject>> sobjs = [find :sd in all fields returning account(name),contact(accountId,firstname,lastname)];</li>
+		<li>Today we learnt about DML operations in Apex. DML operation can be insert, update, delete, undelete and upsert.</li>
+		<li>In Upsert, if record is having key(ID) then that record will update else it will be created. We can use the external id instead of Salesforce record id.</li>
+		<li>We learnt about partial DML operations. We can perform partial DML operations by using database methods.</li>
+		<li>Database methods can be : Database.insert(List<Sobject>,false);Database.update(List<Sobject>,false);Database.delete(List<Sobject>,false);Database.upsert(List<Sobject>,false);</li>
+		<li>Today we learnt about Triggers in Apex. There are two types of trigger i.e before and after.</li>
+		<li>Trigger events can be : Before insert,After insert,Before update ,After update,Before delete ,After delete,After undelete</li>
+		<li>Trigger context variables are New,Old,newMap,oldMap,isInsert,isUpdate,IsDelete,isUndelete,isBefore,isAfter.</li>
+		<li>We learnt how to work with trigger and it's trigger handler class</li>
+		<li>And for one object there should be only one trigger. And we done examples of triggers for different events.</li>
+		
+                </td>
+                </tr>
+ 
+
+	<tr>
                 <td>29-07-2022</td>
                 <td>
                 
