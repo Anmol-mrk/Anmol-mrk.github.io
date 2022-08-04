@@ -17,6 +17,27 @@
             <tbody>
 
 	<tr>
+                <td>04-08-2022</td>
+                <td>
+                
+                <li>Today we learnt about Deployment from sandbox to production.</li>
+		<li>Firstly we ensured that our Sandbox is connected to our Production. We do so by going to deployment settings in production and for sandbox we checked the allow inbound changes.</li>
+		<li>Then our connection between the sandbox and production is created, so we create an outbound changeset in the sandbox.</li>
+		<li>After creating the outbound changeset, we should add the items which we want to deploy to production. And then upload that changeset to production.</li>
+		<li>When the upload gets completed , then we should go to Production org and in that go to inbound changeset and validate the changeset and deploy it.</li>
+		<li>Today we learnt about Apex Integration. Integration means to connect our Salesforce org to an external system.</li>
+		<li>In integration API(application programming interface),Web service. API can be Rest Api and SOAP Api.</li>
+		<li>Rest Api : It uses rest resources  -> URI ,Http methods : httpget,httppost,httppatch,httpdelete,httpput(upsert) ,It supports xml,text, JSON</li>
+		<li>SOAP Api : simple object access protocol , Format XML only , It uses WSDL document </li>
+		<li>We have done some Example of Integration. Firstly we use all the HTTP methods i.e. @httpget,@httppost,@httppatch,@httpdelete to access our salesforce org data from an 						external system i.e. Workbench.</li>
+		<li>And then we do a restCallout example. In which we firstly define the external endpoint in remote site settings.</li>
+		<li>Then we write an apex class for fetching the data from that endpoint URL in our Salesforce Org.</li>
+		
+                </td>
+                </tr>
+ 
+
+	<tr>
                 <td>03-08-2022</td>
                 <td>
                 
