@@ -17,6 +17,29 @@
             <tbody>
 
 	<tr>
+                <td>05-08-2022</td>
+                <td>
+                
+                <li>Today we learnt about how to post data from salesforce org to an external system using REST Api.</li>
+		<li>Then we learnt about SOAP Api. In SOAP, we use the WSDL document. Here we use generate from WSDL to apex tool to convert the xml file.</li>
+		<li>And we can also expose our apex class to external system by converting apex class into the WSDL file. To do so the apex class method should have webservice in declaration.</li>
+		<li>Today we learnt about Asynchronous Apex.Asynchronous Apex means the job will run in background when system will get the resources.</li>
+		<li>Types of Asynchronous Apex are : Batch Apex,Future method,Queueable apex,Schedulable apex. In Asynchronous Apex, we get double the governor limit as it runs in background.</li>
+		<li>In batch Apex we've three methods i.e. start, execute and finish. Also we can schedule the batch apex according to our need.</li>
+		<li>Batch Apex is scheduled in two ways i.e. Goto apex class -> schedule class , Or we can schedule through CRON expression.</li>
+		<li>CRON expression consist of :Second -0-59,Minutes -0-59,Hours -0-23,Date 1-31,Month - 1-12,days -1-7 or sun -sat,Year -  0ptional</li>
+		<li>Example of CRON expression string cronExp = '20 30 9 6 8 ? 2022'; // 9:30:20 on 6th of august, 2022</li>
+		<li>Future method can be used when a class contains two method and in one method we are inserting account(non- setup object) and in another method we're inserting a user(setup object) but          			second method is called in first method. Then it will have a problem of mixed DML operations. So we can declare the second method as Future method, then it 						will not be a problem.Future is also used when we are doing a callout in one function and from another function we're doing DML operation and calling that callout function.</li>
+		<li>Queueable apex is used to enqueueJobs -> job chaining concepts. We can chain multiple jobs in Queueable apex.</li>
+		<li>Today we learnt about Try-Catch Block in Apex. Try-Catch is used to handle the exceptions.</li>
+		<li>In try block we write the code where we think an exception can be raised, and if an exception is raised we will catch that exception in the catch block.</li>
+		<li>If we have a try block then there should be a catch block or if catch block is not there then we should have a finally block.</li>
+		
+                </td>
+                </tr>
+ 
+
+	<tr>
                 <td>04-08-2022</td>
                 <td>
                 
