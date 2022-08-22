@@ -17,6 +17,40 @@
             <tbody>
 
 	<tr>
+                <td>22-08-2022</td>
+                <td>
+                
+                <li>Today we have learnt about Custom Label in Salesforce. Custom Label can be used to show some text data format.</li>
+		<li>And we can also give translation to our custom labels for different languages(multilingual label). But first we have to goto translation language settings -> add the language in which 				we want to translate.And select the user.</li>
+		<li>And we have to import custom label in LWC component by using import myLbl from '@salesforce/label/c.labelName'.</li>
+		<li>Then we learnt about Static resources :These resources can be js , css, image , zip files.</li>
+		<li>To import a static resource in LWC we have to import mPic from '@salesforce/resourceUrl/pic2'. And if a static resource is a css file then we've to use 
+			import { loadStyle } from 'lightning/platformResourceLoader'</li>
+		<li>Then we learnt about Promise.all which is a JS function. In promise.all we will write some condition and if it's gets executed then it will run .then() and if not executed then it will 			run .catch(error)</li>
+		<li>Then we learnt about Life cycle hooks of LWC. This cycle works like multi-threading.</li>
+		<li>Life cycle hooks of LWC contains constructor() :No access to any public property here,It is invoked when the instance of component is created,It is called only once in the life 				cycle ..,After refreshing the page => you are calling constructor,Note : super() must be there in constructor. </li>
+		<li>Life cycle hooks of LWC contains ConnectedCallback() :When the component is added to the DOM,Public property are available,Here component is not visible=> should avoid
+			updation of any label , text box</li>
+		<li>Life cycle hooks of LWC contains disconnectedCallback() :When the component is removed from the DOM</li>
+		<li>Life cycle hooks of LWC contains Render () :Is used to override the default rendering</li>
+		<li>Life cycle hooks of LWC contains renderCallback():When a component is rendered,It can be executed multiple times</li>
+		<li>Life cycle hooks of LWC contains errorCallback(error,stack) :This parent method is called when we got error in child component</li>
+		<li>Then we learnt about Navigation in LWC. To navigate in Lightning Experience, Lightning Communities, and the Salesforce app, use the navigation service, lightning/navigation</li>
+		<li>There are two mandatory steps which we have to do for navigation in LWC, that are Step1 : in js => import lightning/navigation
+			Step 2 : export default class MyCustomElement extends NavigationMixin(LightningElement) {}</li>
+		<li>Navigation can be done to Lightning Component (type: standard__component),Knowledge Article (type: standard__knowledgeArticlePage),Named Page (type: standard__namedPage)
+			Navigation Item Page (type: standard__navItemPage),Object Page (type: standard__objectPage),Record Page (type: standard__recordPage),
+			Record Relationship Page (type: standard__recordRelationshipPage)</li>
+		
+		
+		
+		
+		
+                </td>
+                </tr>
+ 
+
+	<tr>
                 <td>19-08-2022</td>
                 <td>
                 
